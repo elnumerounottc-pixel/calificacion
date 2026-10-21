@@ -49,3 +49,21 @@ body{
 .card:hover>a img{
     transform: scale(1.07);
 }
+/* Esto solo se aplica en celulares y tablets (pantallas menores a 768px) */
+@media (max-width: 768px) {
+    .titulo {
+        text-align: center; /* Centra tu título */
+        margin-top: 20px;
+    }
+
+    .container {
+        flex-direction: column; /* Pone las tarjetas una debajo de otra */
+        align-items: center; /* Las centra en la pantalla */
+        padding: 10px;
+    }
+
+    .card {
+        width: 90%; /* Hace que las tarjetas usen casi todo el ancho del celular */
+        margin-bottom: 15px; /* Les da un poco de espacio entre ellas */
+    }
+}
